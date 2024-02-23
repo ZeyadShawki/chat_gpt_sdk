@@ -51,7 +51,7 @@ class CreateRunResponse {
       CreateRunResponse(
         metadata: json["metadata"] ?? {},
         assistantId: json["assistant_id"] ?? '',
-        createdAt: json["created_at"] ?? 0,
+        createdAt: json["created_at"] ?? '',
         tools: json["tools"] == null
             ? []
             : List<Tool>.from(json["tools"].map((x) => Tool.fromJson(x))),
